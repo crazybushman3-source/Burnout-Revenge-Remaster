@@ -1,0 +1,22 @@
+# Never commit game data, disc images or anything built from them.
+*.iso
+*.xex
+*.7z
+game/
+game_*/
+generated/
+build/
+out/
+logs/
+*.log
+*.exe
+*.dll
+*.pdb
+*.obj
+*.gguf
+*.mkv
+*.mp4
+# Local backups and tool output
+*.before_*
+*.orig
+__pycache__/
