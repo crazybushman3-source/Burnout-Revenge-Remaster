@@ -10,8 +10,10 @@ changes (as patch files), scripts, tools and docs. The installer downloads Xeren
 version, applies the patches, and builds everything from your own disc on your own PC. You need your own copy of
 the game (retail EU or US Xbox 360 disc image).
 
-**Status:** not released yet. This repository only holds the plan for now; the installer and code follow once
-they pass a clean-machine test. No dates - it is done when it is done.
+**Status (8 Oct 2026):** not released yet. The installer is built and passed two full install tests on the
+developer's PC; a clean-machine test (a fresh Windows install in a virtual machine) is running. This repository
+only holds the plan for now; the installer and code follow once that test passes. No dates - it is done when it
+is done.
 
 ## How installing will work (planned)
 
@@ -23,8 +25,9 @@ they pass a clean-machine test. No dates - it is done when it is done.
    shortcuts. Progress bar, full log, and it resumes where it stopped if anything fails.
 4. Play. An uninstaller removes the install folder (and, if you want, the Build Tools).
 
-Expect roughly 20 GB of disk space and a long first install (the game is compiled on your PC); exact numbers
-will be measured on a clean machine before release.
+Expect roughly 20 GB of disk space and a long first install (the game is compiled on your PC). Measured so far
+on the developer's PC (Intel i9-10900KF, Build Tools already installed): the build took about 13 minutes and the
+install folder was 11 GB, plus the space of Microsoft's Build Tools. Clean-machine numbers follow before release.
 
 ## Done (in testing, not published yet)
 
@@ -37,11 +40,14 @@ will be measured on a clean machine before release.
 - Frame pacing and stutter work: texture swaps spread over frames, pooled uploads, a 60 fps hitch test that
   changes every setting and measures each frame.
 - A test bot that drives full races by itself from game memory (used to test builds before anyone plays them).
+- **One-click Windows installer**: built; two full install tests passed on the developer's PC (Build Tools,
+  portable tools, Xerenge at the pinned version, the patches, disc extraction and the build).
+- **Pre-release code review** of the renderer changes, scripts and installer patch; its fixes are in and tested.
 
 ## Next, in order
 
-1. **One-click Windows installer** (in progress) and a clean-machine install test.
-2. **First public release**: final code review, licence notices, README + install guide.
+1. **Clean-machine install test** of the installer (running now).
+2. **First public release**: licence notices, README + install guide.
 3. **Automated tester, finished**: the bot records every run and checks each frame for problems
    (black/corrupt frames, missing textures, flicker, stutter).
 4. **Render scale changes without a hitch** (prepare the new resolution in the background).
