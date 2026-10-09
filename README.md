@@ -1,4 +1,4 @@
-# Burnout Revenge Remaster
+<h1 align="center"><img src="docs/banner.png" alt="Burnout Revenge Remaster" width="860"></h1>
 
 A native Windows PC port of Burnout Revenge (Xbox 360), built on [Xerenge](https://github.com/shipa-2/Xerenge)
 by shipa-2. Bring your own disc. Work in progress.
