@@ -56,6 +56,8 @@ install folder was 11 GB, plus the space of Microsoft's Build Tools. Clean-machi
 
 - Side-by-side previews in the options menu (see what a setting does before you pick it).
 - Graphics presets (Low ... Ultra / Max).
+- **Ultrawide support** (21:9 and wider) as an in-game setting: a wider view of the road instead of a stretched
+  picture, with the HUD and menus kept in their 16:9 area.
 - A benchmark button that tests your PC and recommends settings.
 - Optional HD texture pack made on your own PC by a script (never shipped as files).
 
